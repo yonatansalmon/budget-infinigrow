@@ -1,0 +1,45 @@
+#DropdownMenuContainer {
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#VectorIcon {
+  height: 5px;
+  cursor: pointer; /* Optional, to indicate it's clickable */
+}
+
+#DropdownMenu {
+  position: absolute;
+  top: 100%; /* Position the dropdown right below the icon */
+  right: 0; /* Align to the right edge of the container */
+  width: 160px;
+  height: 92px;
+  border: 1px solid #b2bbd580;
+  z-index: 999;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.DropdownItem {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.DropdownItem:hover {
+  background: #fde8ea;
+  color: #ee2032;
+  font-weight: 700;
+}

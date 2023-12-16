@@ -1,0 +1,40 @@
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-button:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed)::before {
+  background-image: var(--bs-accordion-btn-active-icon);
+  transform: rotate(180deg);
+}
+
+.accordion-button:not(.collapsed) {
+  background: linear-gradient(0deg, rgba(178, 187, 213, 0.5), rgba(178, 187, 213, 0.5)), linear-gradient(0deg, #f6f7fb, #f6f7fb);
+}
+
+.accordion-button::before {
+  flex-shrink: 0;
+  width: var(--bs-accordion-btn-icon-width);
+  height: var(--bs-accordion-btn-icon-width);
+  content: "";
+  margin-right: 1rem;
+  background-image: var(--bs-accordion-btn-icon);
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+}
+
+.BudgetImage {
+  width: 36px;
+  height: 36px;
+  margin: 0 1rem;
+}
+
+#AccordionButton {
+  position: relative;
+}

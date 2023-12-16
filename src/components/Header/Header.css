@@ -1,0 +1,39 @@
+.HeaderContainer {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.TextContainer,
+.BtnContainer {
+  flex: 1;
+}
+
+#MainTitle {
+  font-size: 24px;
+}
+
+#SubTitle {
+  margin: 1.5rem 0 1rem 0;
+  font-size: 18px;
+}
+
+#HeaderText {
+  font-size: 14px;
+  color: #99a4c2;
+}
+
+.BtnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#AddChannelBtn {
+  width: 123px;
+  height: 40px;
+  border: 1px solid #B2BBD580;
+  box-shadow: 0px 1px 2px 0px #E6E8F0;
+  background: linear-gradient(360deg, #FAFAFC 0%, #FFFFFF 100%);
+  color: #707EA7;
+  font-size: .8rem;
+}

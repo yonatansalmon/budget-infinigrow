@@ -1,0 +1,16 @@
+#TabsContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.Tab {
+  color: #7e7e7e;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.Active {
+  font-weight: bold;
+  color: #000;
+  border-bottom: 1px solid #000;
+}

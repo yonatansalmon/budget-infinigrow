@@ -1,0 +1,12 @@
+#BudgetItemsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#BudgetDataContainer {
+    background: linear-gradient(0deg, rgba(178, 187, 213, 0.5), rgba(178, 187, 213, 0.5)),linear-gradient(0deg, #F5F6FA, #F5F6FA);
+    padding: .5rem;
+    width: 80%;
+
+}

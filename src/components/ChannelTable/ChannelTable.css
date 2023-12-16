@@ -1,0 +1,53 @@
+#TableHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.THead {
+  flex: 1;
+}
+
+.ChannelHead {
+  flex: 3;
+}
+
+tr, td, th {
+  border: 0;
+}
+
+.ChannelTableContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#ChannelTitle {
+  display: flex;
+  background: linear-gradient(90deg, rgba(169, 181, 210, 0.0001) 0%, rgba(112, 126, 167, 0.134454) 100%);
+  font-size: 14px;
+}
+
+#ChannelHeader {
+  background: linear-gradient(90deg, rgba(169, 181, 210, 0.0001) 0%, rgba(112, 126, 167, 0.134454) 100%);
+}
+
+#ChannelIcon {
+  margin-right: 0.8rem;
+}
+
+.SingleAmount {
+  width: 80px;
+  height: 20px;
+}
+
+#TableHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.THead {
+  flex: 1;
+}
+
+.ChannelHead {
+  flex: 3;
+}

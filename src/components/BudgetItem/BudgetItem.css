@@ -1,0 +1,22 @@
+#ItemContainer {
+    margin: 1rem
+}
+
+.ItemInput {
+    background-color: #fff;
+    padding-left: 2rem;
+    border: 1px solid #B2BBD580
+}
+#BudgetInputContainer {
+    position: relative;
+}
+#BudgetInputContainer::before {
+    content: '$';
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    font-weight: 700;
+    font-size: .7rem;
+    top: 50%;
+    transform: translateY(-50%)
+}
