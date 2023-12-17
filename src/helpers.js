@@ -25,5 +25,9 @@ const getNumericValue = (value) => {
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const quarters = ["Q1", "Q2", "Q3", "Q4"];
 const days = [...Array(30)];
+const TAB1 = 'tab1';
+const TAB2 = 'tab2';
+const EQUAL = 'equal';
+const MANUAL = 'manual'
 
-export { renderSelectOptions, getNumericValue, months, quarters, days };
+export { renderSelectOptions, getNumericValue, months, quarters, days, TAB1, TAB2, EQUAL, MANUAL };

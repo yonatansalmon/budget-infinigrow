@@ -32,7 +32,7 @@ const ChannelItem = ({ item, channel }) => {
           </div>
         ) : (
           <p className="ChannelItem">
-            ${itemValue ? Number(itemValue).toLocaleString() : ""} <img src={EditIcon} className="EditIcon" alt="EditIcon" onClick={() => setIsEdit(true)} />
+            ${itemValue ? Number(itemValue).toLocaleString() : "0"} <img src={EditIcon} className="EditIcon" alt="EditIcon" onClick={() => setIsEdit(true)} />
           </p>
         )}
       </td>

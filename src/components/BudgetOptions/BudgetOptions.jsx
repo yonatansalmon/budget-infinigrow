@@ -1,6 +1,6 @@
 import React from "react";
 import "./BudgetOptions.css";
-import { renderSelectOptions, getNumericValue } from "../../helpers";
+import { renderSelectOptions, getNumericValue, EQUAL, MANUAL } from "../../helpers";
 import { useBudget } from "../../context/BudgetProvider";
 
 const BudgetOptions = ({ channel }) => {
@@ -13,10 +13,17 @@ const BudgetOptions = ({ channel }) => {
   };
 
   const onAllocationChange = (allocationType) => {
-    setIsEqualBreakdown(allocationType === "equal");
+    setIsEqualBreakdown(allocationType === EQUAL);
     const updatedChannel = { ...channel, allocation: allocationType };
-    setChannels(channels.map((c) => (c.id === channel.id ? updatedChannel : c)));
-    allocationType === "equal" && handleBudgetFrequency(channel.frequency, channel.id, channel.baseline);
+    const updatedChannelsLis = channels.map((c) => {
+      if (c.id === channel.id) {
+        return updatedChannel;
+      } else {
+        return channel;
+      }
+    });
+    setChannels(updatedChannelsLis);
+    allocationType === EQUAL && handleBudgetFrequency(channel.frequency, channel.id, channel.baseline);
   };
 
   return (
@@ -34,10 +41,10 @@ const BudgetOptions = ({ channel }) => {
       <div id="AllocationContainer">
         <p className="InputLabel">Budget Allocation &#9432;</p>
         <div className="TabsContainer" disabled={isEditChannelId !== channel.id}>
-          <div id="equal" onClick={() => onAllocationChange("equal")} className={channel.allocation === "equal" ? "AllocationTabs Selected" : "AllocationTabs"}>
+          <div id="equal" onClick={() => onAllocationChange(EQUAL)} className={channel.allocation === EQUAL ? "AllocationTabs Selected" : "AllocationTabs"}>
             Equal
           </div>
-          <div id="manual" onClick={() => onAllocationChange("manual")} className={channel.allocation === "manual" ? "AllocationTabs Selected" : "AllocationTabs"}>
+          <div id="manual" onClick={() => onAllocationChange(MANUAL)} className={channel.allocation === MANUAL ? "AllocationTabs Selected" : "AllocationTabs"}>
             Manual
           </div>
         </div>
