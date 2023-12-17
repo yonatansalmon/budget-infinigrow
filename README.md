@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Budget Planner App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This Budget Planner App is a React-based web application designed to help users manage and allocate their budgets efficiently across different channels. The application utilizes the MERN stack and offers a clean, user-friendly interface for budget management.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Header
+- Displays the main title, subtitle, and a brief description of the app's purpose.
+- Button for adding new budget channels.
 
-### `npm start`
+### Tabs
+- Two tabs allowing the user to switch between budget planning and channel overview.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Budget Management
+- Users can define and edit budget channels with options like baseline budget, frequency (monthly, quarterly, annually), and allocation method (equal or manual).
+- The app provides an interactive table to visualize and edit monthly budgets for each channel.
+- Budget breakdowns can be adjusted manually or divided equally across time periods.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Channel Table
+- A responsive table showing each channel with its corresponding monthly budget allocation.
+- Editable fields for adjusting individual month budgets for each channel.
 
-### `npm test`
+### Context and Hooks
+- Utilizes React Context API for state management across the application.
+- Custom hooks for managing budget-related operations and state.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation and Setup
 
-### `npm run build`
+### Prerequisites
+- Node.js
+- npm or yarn
+- A modern web browser
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
+1. Clone the repository to your local machine.
+2. Navigate to the root directory of the project in your terminal.
+3. Run `npm install` or `yarn install` to install dependencies.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Starting the App
+- Run `npm start` or `yarn start` to start the application.
+- The app will be available at `localhost:3000` in your web browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
+- On launching the app, users can view and manage budget channels.
+- Use the tabs to switch between different views.
+- Budgets can be added, edited, or removed using the provided interfaces.
 
-### `npm run eject`
+## Technologies Used
+- React (Functional Components, Hooks, Context API)
+- CSS for styling
+- Bootstrap for responsive tables and components
+- Nanoid for unique identifiers
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+Contributions to the project are welcome. Please follow these steps:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes with clear, descriptive messages.
+4. Push your branch and submit a pull request.

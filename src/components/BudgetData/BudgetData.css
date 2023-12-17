@@ -10,3 +10,14 @@
     width: 80%;
 
 }
+
+#BreakdownTitle {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#BreakdownText {
+    font-size: .8rem;
+    font-weight: 400;
+
+}
