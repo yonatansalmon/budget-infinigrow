@@ -18,9 +18,16 @@ const renderSelectOptions = (budgetFrequency) => {
   ));
 };
 
+const getNumericValue = (value) => {
+  return value.replace(/[^0-9.]/g, '');
+}
+
 
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const quarters = ["Q1", "Q2", "Q3", "Q4"];
 const days = [...Array(30)]
 
-export { renderSelectOptions, months, quarters, days};
+
+
+
+export { renderSelectOptions, getNumericValue, months, quarters, days };

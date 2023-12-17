@@ -74,7 +74,7 @@ const BudgetProvider = ({ children }) => {
 
   const handleBudgetItemChange = (channelId, itemLabel, newAmount) => {
     const updatedChannels = channels.map((channel) => {
-      if (channel.id == channelId) {
+      if (channel.id === channelId) {
         const newBudgetBreakdown = channel.budgetBreakdown.map((item) => {
           if (item.label === itemLabel) {
             return { ...item, amount: newAmount };

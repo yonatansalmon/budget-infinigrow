@@ -4,7 +4,7 @@
 }
 
 #BudgetOptionsContainer #FrequencyContainer {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 #FrequencyContainer,
@@ -25,10 +25,15 @@
   font-size: 0.8rem;
 }
 
-#BaselineInput {
+.BaselineInput {
   border: 1px solid #b2bbd580;
   height: 40px;
   padding: 1rem;
+  color: #2a3558;
+}
+
+.BaselineInput.Manual {
+  color: #99A4C2;
 }
 
 .TabsContainer {
@@ -51,14 +56,14 @@
 }
 
 .AllocationTabs.Selected {
-    background: linear-gradient(0deg, rgba(178, 187, 213, 0.5), rgba(178, 187, 213, 0.5)), linear-gradient(0deg, #f6f7fb, #f6f7fb);
-  }
+  background: linear-gradient(0deg, rgba(178, 187, 213, 0.5), rgba(178, 187, 213, 0.5)), linear-gradient(0deg, #f6f7fb, #f6f7fb);
+}
 
 #Equal {
   border-right: 1px solid #b2bbd580;
 }
 
-
-input:disabled, select:disabled {
-  background-color: rgba(239, 239, 239, 0.3)
+input:disabled,
+select:disabled {
+  background-color: rgba(239, 239, 239, 0.3);
 }
