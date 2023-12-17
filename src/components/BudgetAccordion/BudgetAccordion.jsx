@@ -7,16 +7,16 @@ import HeaderDropdown from "../HeaderDropdown/HeaderDropdown";
 import { useBudget } from "../../context/BudgetProvider";
 import { useState } from "react";
 
-const BudgetAccordion = ({ channel, activeKey, onToggle }) => {
+const BudgetAccordion = ({ channel, activeKey, toggleAccordion }) => {
   const { handleEnableEditing, handleChangeChannelName } = useBudget();
   const [isEditChannelName, setIsEditChannelName] = useState(false);
   const [channelName, setChannelName] = useState(channel.name);
 
   const handleToggle = (e) => {
     e.stopPropagation();
-    const key = activeKey === channel.id ? null : channel.id;
-    onToggle(key);
-    handleEnableEditing(key);
+    const channelId = activeKey === channel.id ? null : channel.id;
+    toggleAccordion(channelId);
+    handleEnableEditing(channelId);
     if (channel.name !== channelName) {
       handleChangeChannelName(channel.id, channelName);
     }

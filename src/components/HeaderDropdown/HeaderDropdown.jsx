@@ -14,7 +14,7 @@ const HeaderDropdown = ({ channel, setIsEditChannelName }) => {
 
   const onEditChannel = () => {
     setIsVisible(false);
-    setIsEditChannelName(true)
+    setIsEditChannelName(true);
   };
 
   const onRemoveChannel = () => {
@@ -25,7 +25,6 @@ const HeaderDropdown = ({ channel, setIsEditChannelName }) => {
   return (
     <div id="DropdownMenuContainer" onClick={toggleDropdown}>
       <img src={Vector} id="VectorIcon" />
-
       {isVisible && (
         <div id="DropdownMenu">
           <div className="DropdownItem" onClick={onEditChannel}>

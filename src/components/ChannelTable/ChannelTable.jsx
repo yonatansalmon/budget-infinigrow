@@ -1,9 +1,9 @@
-import './ChannelTable.css';
-import Table from 'react-bootstrap/Table';
-import { useBudget } from '../../context/BudgetProvider';
-import { months } from '../../helpers';
-import BudgetImage from '../../icons/ReviewsIcon.svg';
-import ChannelItem from '../ChannelItem/ChannelItem';
+import "./ChannelTable.css";
+import Table from "react-bootstrap/Table";
+import { useBudget } from "../../context/BudgetProvider";
+import { months } from "../../helpers";
+import BudgetImage from "../../icons/ReviewsIcon.svg";
+import ChannelItem from "../ChannelItem/ChannelItem";
 
 const ChannelTable = () => {
   const { channels } = useBudget();
@@ -12,7 +12,7 @@ const ChannelTable = () => {
     <Table responsive>
       <thead>
         <tr>
-          <th id='ChannelHeader'>CHANNEL</th>
+          <th id="ChannelHeader">CHANNEL</th>
           {months.map((month) => (
             <th>{month}</th>
           ))}
@@ -23,8 +23,8 @@ const ChannelTable = () => {
           const monthlyBudget = channel.baseline / 12;
           return (
             <tr key={channel.id}>
-              <td id='ChannelTitle'>
-                <img src={BudgetImage} alt='Budget' id='ChannelIcon' />
+              <td id="ChannelTitle">
+                <img src={BudgetImage} alt="Budget" id="ChannelIcon" />
                 {channel.name}
               </td>
               {months.map((month) => (

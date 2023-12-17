@@ -17,7 +17,7 @@
   position: relative;
 }
 #BudgetInputContainer::before {
-  content: '$';
+  content: "$";
   display: inline-block;
   position: absolute;
   left: 10px;

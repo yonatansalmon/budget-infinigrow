@@ -8,9 +8,11 @@
   box-shadow: none !important;
 }
 
+.accordion-button.collapsed::before {
+  transform: rotate(180deg);
+}
 .accordion-button:not(.collapsed)::before {
   background-image: var(--bs-accordion-btn-active-icon);
-  transform: rotate(180deg);
 }
 
 .accordion-button:not(.collapsed) {

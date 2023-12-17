@@ -1,5 +1,3 @@
-
-
 .SingleAmount {
   width: 80px;
   height: 20px;
@@ -16,10 +14,11 @@
 }
 
 .ChannelItem:hover .EditIcon {
-  visibility: visible
+  visibility: visible;
 }
 
-.CancelIcon, .SaveIcon {
+.CancelIcon,
+.SaveIcon {
   cursor: pointer;
 }
 

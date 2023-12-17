@@ -11,13 +11,13 @@
 
 #VectorIcon {
   height: 5px;
-  cursor: pointer; /* Optional, to indicate it's clickable */
+  cursor: pointer;
 }
 
 #DropdownMenu {
   position: absolute;
-  top: 100%; /* Position the dropdown right below the icon */
-  right: 0; /* Align to the right edge of the container */
+  top: 100%;
+  right: 0;
   width: 160px;
   height: 92px;
   border: 1px solid #b2bbd580;

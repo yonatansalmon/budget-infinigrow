@@ -4,7 +4,7 @@ import { useBudget } from "../../context/BudgetProvider";
 
 const Header = () => {
   const { handleAddChannel } = useBudget();
-  
+
   return (
     <div className="HeaderContainer">
       <div className="TextContainer">

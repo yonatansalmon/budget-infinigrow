@@ -10,7 +10,7 @@ const BudgetData = ({ budgetBreakdown, channel }) => {
 
       <div id="BudgetItemsContainer">
         {budgetBreakdown.map((budget) => (
-          <BudgetItem budget={budget} channel={channel}/>
+          <BudgetItem budget={budget} channel={channel} />
         ))}
       </div>
     </div>

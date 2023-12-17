@@ -11,7 +11,9 @@
   flex: 3;
 }
 
-tr, td, th {
+tr,
+td,
+th {
   border: 0;
 }
 

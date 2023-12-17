@@ -51,7 +51,7 @@ const BudgetProvider = ({ children }) => {
             newBreakdown = months.map((label) => ({ label, amount: Math.round(budgedBaseline / 12) }));
             break;
           default:
-            newBreakdown = [...Array(30)].map((_, i) => ({ label: i + 1, amount: Math.round(budgedBaseline / 30) }));
+            newBreakdown = months.map((label) => ({ label, amount: Math.round(budgedBaseline / 12) }));
             break;
         }
         return { ...channel, allocation: "equal", frequency, budgetBreakdown: newBreakdown, baseline: budgedBaseline };
@@ -72,7 +72,7 @@ const BudgetProvider = ({ children }) => {
     }
   };
 
-  const handleBudgetItemChange = (channelId, itemLabel, newAmount) => {
+  const handleManualBreakdown = (channelId, itemLabel, newAmount) => {
     const updatedChannels = channels.map((channel) => {
       if (channel.id === channelId) {
         const newBudgetBreakdown = channel.budgetBreakdown.map((item) => {
@@ -105,7 +105,7 @@ const BudgetProvider = ({ children }) => {
   };
 
   return (
-    <BudgetContext.Provider value={{ channels, setChannels, handleBudgetFrequency, handleBaselineChange, isEqualBreakdown, setIsEqualBreakdown, handleBudgetItemChange, handleAddChannel, handleRemoveChannel, handleEnableEditing, isEditChannelId, handleChangeChannelName }}>
+    <BudgetContext.Provider value={{ channels, setChannels, handleBudgetFrequency, handleBaselineChange, isEqualBreakdown, setIsEqualBreakdown, handleManualBreakdown, handleAddChannel, handleRemoveChannel, handleEnableEditing, isEditChannelId, handleChangeChannelName }}>
       {children}
     </BudgetContext.Provider>
   );
